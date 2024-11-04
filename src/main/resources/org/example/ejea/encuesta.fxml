@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="638.0" prefWidth="652.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ejea.HelloController">
+   <children>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Encuesta" wrappingWidth="195.13434600830078">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="240.0" />
+         </VBox.margin>
+      </Text>
+
+      <HBox prefHeight="38.0" prefWidth="652.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Profesión:" wrappingWidth="85.33666801452637">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="50.0" right="10.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="profesionTextField" prefHeight="26.0" prefWidth="498.0" />
+         </children>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </HBox>
+
+      <HBox prefHeight="38.0" prefWidth="652.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="N de hermanos:" wrappingWidth="113.3366756439209">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" right="10.0" />
+               </HBox.margin>
+            </Text>
+            <TextField fx:id="hermanosTextField" prefHeight="26.0" prefWidth="168.0" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Edad">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" right="50.0" />
+               </HBox.margin>
+            </Text>
+            <ComboBox fx:id="edadComboBox" prefWidth="150.0" />
+         </children>
+      </HBox>
+
+      <HBox prefHeight="46.0" prefWidth="652.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SEXO:">
+               <HBox.margin>
+                  <Insets left="88.0" top="15.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <RadioButton mnemonicParsing="false" text="Hombre">
+               <HBox.margin>
+                  <Insets left="16.0" top="15.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" text="Mujer">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="30.0" top="15.0" />
+               </HBox.margin>
+            </RadioButton>
+            <RadioButton mnemonicParsing="false" text="Otro">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="30.0" top="15.0" />
+               </HBox.margin>
+            </RadioButton>
+         </children>
+      </HBox>
+
+      <HBox prefHeight="36.0" prefWidth="652.0">
+         <children>
+            <CheckBox fx:id="deportesCheckBox" mnemonicParsing="false" text="¿Practicas algún deporte?">
+               <HBox.margin>
+                  <Insets left="15.0" right="180.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </CheckBox>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="¿Cuál?">
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+
+      <HBox prefHeight="72.0" prefWidth="652.0">
+         <children>
+            <HBox prefHeight="72.0" prefWidth="652.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <ListView fx:id="deportesListView" prefHeight="109.0" prefWidth="235.0" HBox.hgrow="ALWAYS">
+                     <HBox.margin>
+                        <Insets left="380.0" right="20.0" />
+                     </HBox.margin>
+                  </ListView>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+
+      <HBox prefHeight="35.0" prefWidth="652.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Marque del 1 al 10 su grado de afición">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="190.0" top="10.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+      </HBox>
+
+      <HBox prefHeight="70.0" prefWidth="652.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Compras:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="30.0" top="30.0" />
+               </HBox.margin>
+            </Text>
+            <Slider fx:id="comprasSlider" blockIncrement="1.0" majorTickUnit="1.0" max="10.0" minorTickCount="1" prefHeight="18.0" prefWidth="509.0" showTickLabels="true" showTickMarks="true" value="5.0">
+               <HBox.margin>
+                  <Insets left="27.0" top="20.0" />
+               </HBox.margin>
+            </Slider>
+         </children>
+      </HBox>
+
+      <HBox prefHeight="70.0" prefWidth="652.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ver televisión:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="5.0" top="30.0" />
+               </HBox.margin>
+            </Text>
+            <Slider fx:id="televisionSlider" blockIncrement="1.0" majorTickUnit="1.0" max="10.0" minorTickCount="1" prefHeight="18.0" prefWidth="509.0" showTickLabels="true" showTickMarks="true" value="5.0">
+               <HBox.margin>
+                  <Insets left="25.0" top="20.0" />
+               </HBox.margin>
+            </Slider>
+         </children>
+      </HBox>
+
+      <HBox prefHeight="70.0" prefWidth="652.0">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Ir al cine:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="30.0" top="30.0" />
+               </HBox.margin>
+            </Text>
+            <Slider fx:id="cineSlider" blockIncrement="1.0" majorTickUnit="1.0" max="10.0" minorTickCount="1" prefHeight="18.0" prefWidth="509.0" showTickLabels="true" showTickMarks="true" value="5.0">
+               <HBox.margin>
+                  <Insets left="30.0" top="20.0" />
+               </HBox.margin>
+            </Slider>
+         </children>
+      </HBox>
+
+      <HBox prefHeight="50.0" prefWidth="652.0">
+         <children>
+            <Button fx:id="aceptarButton" mnemonicParsing="false" onAction="#onHelloButtonClick" prefHeight="26.0" prefWidth="138.0" text="Aceptar">
+               <HBox.margin>
+                  <Insets left="165.0" top="15.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="cancelarButton" mnemonicParsing="false" onAction="#onCancelButtonClick" prefHeight="26.0" prefWidth="137.0" text="Cancelar">
+               <HBox.margin>
+                  <Insets left="40.0" top="15.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>
